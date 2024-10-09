@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;500;900&display=swap" rel="stylesheet">
+	<style type="text/css">
+	.m-plus-rounded-1c-thin {
+	  font-family: "M PLUS Rounded 1c", sans-serif;
+	  font-weight: 100;
+	  font-style: normal;}
+	.m-plus-rounded-1c-medium {
+	  font-family: "M PLUS Rounded 1c", sans-serif;
+	  font-weight: 500;
+	  font-style: normal;}
+	.m-plus-rounded-1c-black {
+	  font-family: "M PLUS Rounded 1c", sans-serif;
+	  font-weight: 900;
+	  font-style: normal;}
+
+		html{margin: 0px;padding: 0px;}
+		a{display: inline-block;-block;color: black;text-decoration: none;}
+		a:hover{color: blue;}
+		.hand,.deco{width: 70vw;position: absolute;
+			top: 6vw;left: 15vw;
+			pointer-events: none;}
+		.deco{display: none;}
+		.shd{mix-blend-mode: multiply;}
+		.shn{mix-blend-mode: screen;}
+		p{font-family: "M PLUS Rounded 1c";text-align: center;
+			font-size: 1.4vw;font-weight: 900;
+			letter-spacing: -0.05vw;
+			animation: pcolor 0.7s infinite alternate;
+			position: absolute;}
+			@keyframes pcolor{to{color: transparent;}}
+		footer{text-align: right;position: absolute;
+			font-size: 0.8vw;top: 53vw;right: 1vw;}
+
+		.na1-le{background: #FFEBE3;width: 1.6vw;height: 3.5vw;
+			position: absolute;top: 22.2vw;left: 45.8vw;
+			rotate: 10deg;border-radius: 90% 10% 25% 50%;}
+		.na2-le{background: #FFEBE3;width: 2.1vw;height: 3.5vw;
+			position: absolute;top: 8.4vw;left: 40.2vw;
+			rotate: 2deg;border-radius: 50% 50% 25% 25%;}
+		.na3-le{background: #FFEBE3;width: 2.2vw;height: 3.7vw;
+			position: absolute;top: 6vw;left: 36.8vw;
+			rotate: 5deg;border-radius: 50% 50% 25% 25%;}
+		.na4-le{background: #FFEBE3;width: 2.1vw;height: 3.5vw;
+			position: absolute;top: 8.3vw;left: 33.2vw;
+			rotate: 10deg;border-radius: 50% 50% 25% 25%;}
+		.na5-le{background: #FFEBE3;width: 1.4vw;height: 3vw;
+			position: absolute;top: 13.6vw;left: 28.2vw;
+			rotate: 10deg;border-radius: 30% 50% 25% 25%;}
+
+		.na1-ri{background: #FFEBE3;width: 1.6vw;height: 3.5vw;
+			position: absolute;top: 22.2vw;left: 52.5vw;
+			rotate: -10deg;border-radius: 10% 90% 50% 25%;}
+		.na2-ri{background: #FFEBE3;width: 2.1vw;height: 3.5vw;position: absolute;top: 8.4vw;left: 57.8vw;
+			rotate: -2deg;border-radius: 50% 50% 25% 25%;}
+		.na3-ri{background: #FFEBE3;width: 2.2vw;height: 3.7vw;
+			position: absolute;top: 6vw;left: 61vw;
+			rotate: -5deg;border-radius: 50% 50% 25% 25%;}
+		.na4-ri{background: #FFEBE3;width: 2.1vw;height: 3.5vw;
+			position: absolute;top: 8.3vw;left: 64.8vw;
+			rotate: -10deg;border-radius: 50% 50% 25% 25%;}
+		.na5-ri{background: #FFEBE3;width: 1.4vw;height: 3vw;
+			position: absolute;top: 13.6vw;left: 70.4vw;
+			rotate: -10deg;border-radius: 50% 30% 25% 25%;}
+
+		.gra{background: linear-gradient(180deg, rgba(230, 190, 190, 0.5), rgba(255, 255, 255, 0.0));
+			mix-blend-mode: multiply;pointer-events: none;}
+
+		.but{display: inline-block;width: 3vw;height: 3vw;
+			background: white;
+			border: 1px solid black;border-radius: 50%;
+			font-size: 1.5vw;cursor: pointer;
+		font-family: "M PLUS Rounded 1c"}
+		.but:hover{background: black;color: white;}
+		.bu-center{text-align: center; padding-top: 1.2vw;}
+		#resetNails{display: inline-block;color: white;
+			width: 3vw;height: 3vw;background: black;
+			border: 1px solid black;border-radius: 50%;
+			font-size: 1.7vw;cursor: pointer;
+		font-family: "M PLUS Rounded 1c";}
+		#resetNails:hover{background: white;color: black;}
+
+	input[type="color"] {appearance: none;
+		background: transparent;border: none;padding: 0px;
+		inline-size: 0px;cursor: pointer;
+		width: 4vw;height: 5vw;margin: 0px;top: 20vw;
+		position: absolute;}
+		#b1{width: 7vw;left: 6.5vw;}
+		#b2{left: 3vw;}
+		#pB1{top: 16.5vw; left: 8.5vw;}
+		#pB2{top: 16.5vw; left: 3.3vw; font-weight: 500;}
+
+		#b3{width: 7vw;right: 6.5vw;}
+		#b4{right: 3vw;}
+		#pB3{top: 16.5vw; right: 8.5vw;}
+		#pB4{top: 16.5vw; right: 3.3vw; font-weight: 500;}
+
+		.box-le{width: 18.5vw;height: 22vw;position: absolute;
+		border-radius: 0% 100% 100% 0%;top: 11.2vw;left: 0vw;
+		background: rgba(0, 0, 0, 0.2);
+		mix-blend-mode: multiply;}
+		.box-ri{width: 18.5vw;height: 22vw;position: absolute;
+		border-radius: 100% 0% 0% 100%;top: 11.2vw;right: 0vw;
+		background: rgba(0, 0, 0, 0.2);
+		mix-blend-mode: multiply;}
+	</style>
+	<title>매니큐어 바르기</title>
+</head>
+<body>
+	<img src="0shadow.png" class="hand shd">
+	<div class="box-le"></div>
+	<div class="box-ri"></div>
+	<input type="color" id="b1">
+	<input type="color" id="b2">
+	<input type="color" id="b3">
+	<input type="color" id="b4">
+	<p id="pB1">main</p>
+	<p id="pB2">point</p>
+	<p id="pB3">main</p>
+	<p id="pB4">point</p>
+	<div class="bu-center">
+		<button class="but" id="bu1bk">♦︎</button>
+		<button class="but" id="bu1wh">♢</button>
+		<button class="but" id="bu2bk">★</button>
+		<button class="but" id="bu2wh">☆</button>
+		<button class="but" id="bu3bk">♥︎</button>
+		<button class="but" id="bu3wh">♡</button>
+		<button id="resetNails">↺</button>
+	</div>
+	<img src="hand.png" class="hand">
+	<div class="na1-le" id="na1le"></div>
+	<div class="na2-le" id="na2le"></div>
+	<div class="na3-le" id="na3le"></div>
+	<div class="na4-le" id="na4le"></div>
+	<div class="na5-le" id="na5le"></div>
+	<div class="na1-ri" id="na1ri"></div>
+	<div class="na2-ri" id="na2ri"></div>
+	<div class="na3-ri" id="na3ri"></div>
+	<div class="na4-ri" id="na4ri"></div>
+	<div class="na5-ri" id="na5ri"></div>
+		<div class="na1-le gra"></div>
+		<div class="na2-le gra"></div>
+		<div class="na3-le gra"></div>
+		<div class="na4-le gra"></div>
+		<div class="na5-le gra"></div>
+		<div class="na1-ri gra"></div>
+		<div class="na2-ri gra"></div>
+		<div class="na3-ri gra"></div>
+		<div class="na4-ri gra"></div>
+		<div class="na5-ri gra"></div>
+	<img src="1bk-ribbon.png" class="deco" id="1bk">
+	<img src="1wh-ribbon.png" class="deco" id="1wh">
+	<img src="2bk-star.png" class="deco shd" id="2bk">
+	<img src="2wh-star.png" class="deco shn" id="2wh">
+	<img src="3bk-heart.png" class="deco shd" id="3bk">
+	<img src="3wh-heart.png" class="deco shn" id="3wh">
+
+	<img src="shining.png" class="hand">
+	<audio id="clearSound" src="sound.mp3" preload="auto"></audio>
+	<audio id="colorSound" src="soundclr1.mp3" preload="auto"></audio>
+	<audio id="ptcolorSound" src="soundclr2.mp3" preload="auto"></audio>
+	<audio id="rbSound" src="sound1rb.mp3" preload="auto"></audio>
+	<audio id="stSound" src="sound2st.mp3" preload="auto"></audio>
+	<audio id="htSound" src="sound3ht.mp3" preload="auto"></audio>
+	<script type="text/javascript">
+		window.onmousemove = function(e) {
+			let hue = (e.clientX / window.innerWidth) * 360; 
+			let val = 100 - (e.clientY / window.innerHeight) * 100;
+			document.body.style.background = "hsl(" + hue + ", 50%, " + val + "%)";}
+
+		function playColorSound() {
+			var audio = document.getElementById("colorSound");
+			audio.currentTime = 0;audio.play();}
+		function playPTColorSound() {
+			var audio = document.getElementById("ptcolorSound");
+			audio.currentTime = 0;audio.play();}
+
+		b1.oninput = function(){
+		const leftNails = document.querySelectorAll('#na1le, #na2le, #na3le, #na4le, #na5le');
+		leftNails.forEach(nail => nail.style.background = b1.value);playColorSound();
+		pB1.style.color = b1.value;}
+		b2.oninput = function(){
+		const leftNails = document.querySelectorAll('#na2le, #na4le');
+		leftNails.forEach(nail => nail.style.background = b2.value);playPTColorSound();
+		pB2.style.color = b2.value;}
+
+		b3.oninput = function(){
+		const rightNails = document.querySelectorAll('#na1ri, #na2ri, #na3ri, #na4ri, #na5ri');
+		rightNails.forEach(nail => nail.style.background = b3.value);playColorSound();
+		pB3.style.color = b3.value;}
+		b4.oninput = function(){
+		const rightNails = document.querySelectorAll('#na2ri, #na4ri');
+		rightNails.forEach(nail => nail.style.background = b4.value);playPTColorSound();
+		pB4.style.color = b4.value;}
+
+		function playClickSound() {
+		var audio = document.getElementById("clearSound");
+		audio.currentTime = 0;audio.play();}
+		const allNails = document.querySelectorAll('#na1le, #na2le, #na3le, #na4le, #na5le, #na1ri, #na2ri, #na3ri, #na4ri, #na5ri');
+		document.getElementById('resetNails').onclick = function() {allNails.forEach(nail => 
+				{nail.style.background = '#FFEBE3';});
+			playClickSound();hideAllImages();};
+
+		function playRBSound() {
+			var audio = document.getElementById("rbSound");
+			audio.currentTime = 0;audio.play();}
+		function playSTSound() {
+			var audio = document.getElementById("stSound");
+			audio.currentTime = 0;audio.play();}
+		function playHTSound() {
+			var audio = document.getElementById("htSound");
+			audio.currentTime = 0;audio.play();}
+
+		function hideAllImages() {
+			const images = document.querySelectorAll('.deco');
+			images.forEach(img => img.style.display = 'none');}
+		document.getElementById('bu1bk').onclick = function() {
+			hideAllImages();
+			document.getElementById('1bk').style.display = 'block';playRBSound();};
+		document.getElementById('bu1wh').onclick = function() {
+			hideAllImages();
+			document.getElementById('1wh').style.display = 'block';playRBSound();};
+		document.getElementById('bu2bk').onclick = function() {
+			hideAllImages();
+			document.getElementById('2bk').style.display = 'block';playSTSound();};
+		document.getElementById('bu2wh').onclick = function() {
+			hideAllImages();
+			document.getElementById('2wh').style.display = 'block';playSTSound();};
+		document.getElementById('bu3bk').onclick = function() {
+			hideAllImages();
+			document.getElementById('3bk').style.display = 'block';playHTSound();};
+		document.getElementById('bu3wh').onclick = function() {
+			hideAllImages();
+			document.getElementById('3wh').style.display = 'block';playHTSound();};
+	</script>
+</body>
+<footer>
+	© 2024 김서연 All rights reserved. <br>sowyi3713@gmail.com <br>sound from 
+	<a href="https://www.youtube.com/watch?v=BlmezHTpyfA">bongbongmusic</a>
+</footer>
+</html>
